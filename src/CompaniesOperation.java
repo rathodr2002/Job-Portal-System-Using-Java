@@ -1,5 +1,4 @@
 import Database.*;
-import com.sun.deploy.panel.IProperty;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
