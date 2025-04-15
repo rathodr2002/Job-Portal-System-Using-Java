@@ -22,7 +22,7 @@ jobs:
         run: mkdir out
 
       - name: Compile Java files
-        run: javac -d out src/Main.java src/Database/*.java
+        run: javac -d out src/*.java src/Database/*.java
 
       - name: Run Main class
         run: java -cp out Main
