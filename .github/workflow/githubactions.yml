@@ -1,0 +1,26 @@
+name: Java Build and Run
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Compile Java files
+      run: javac -d out src/**/*.java
+
+    - name: Run Main class
+	  run: java -cp out Main
+
