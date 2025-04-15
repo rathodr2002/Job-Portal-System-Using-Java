@@ -25,4 +25,4 @@ jobs:
         run: javac -cp "lib/mysql-connector-j-9.2.0.jar" -d out src/*.java src/Database/*.java
 
       - name: Run Main class
-        run: java -cp "out:lib/mysql-connector-j-9.2.0.jar" Main
+        run: java -cp "out;lib/mysql-connector-j-9.2.0.jar" Main
