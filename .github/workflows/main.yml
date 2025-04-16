@@ -26,3 +26,5 @@ jobs:
 
       - name: Run Main class
         run: java -cp "out:lib/mysql-connector-j-9.2.0.jar" Main
+
+        
